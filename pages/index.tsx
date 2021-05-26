@@ -12,7 +12,7 @@ import { CardItem } from '../components/Cards/CardItem/CardItem';
 
 
 
-
+const prefix = '/next-portfolio';
 
 export default function Home() {
  
