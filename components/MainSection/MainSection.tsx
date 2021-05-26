@@ -15,7 +15,7 @@ import { FiGithub } from 'react-icons/fi';
 
 
 export interface MainSectionProps {
-    href: string
+    href?: string
    };
    
    

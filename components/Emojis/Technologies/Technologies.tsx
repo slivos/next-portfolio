@@ -3,14 +3,13 @@ import { StyledTechnologies } from './Technologies.styled';
 
 export interface TechnoProps {
     label: string,
-    role: string,
+    symbol: string
    };
    
    
    
-export const Technologies: React.FC<TechnoProps> = (
-    { label, role, ...props }
-   ) => (
+export function Technologies(props: TechnoProps): React.ReactElement { 
+    return (
     <StyledTechnologies
         role="img"
         aria-label={props.label ? props.label : ""}
@@ -18,4 +17,5 @@ export const Technologies: React.FC<TechnoProps> = (
     >
         {props.symbol}
     </StyledTechnologies>
-);
+    )
+};

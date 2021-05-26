@@ -6,10 +6,13 @@ export interface MenuProps {
    };
 
 
-export const Menu: React.FC<MenuProps> = ({ open, ...props }) => {
+
+export function Menu (props: MenuProps): React.ReactElement {
+
     return(
-      <MenuContainer open={open}>  
-        <StyledMenu open={open} {...props}>
+      
+      <MenuContainer open={props.open}>
+        <StyledMenu open={props.open}>
             <a href="/">
                 DOMOV
             </a>

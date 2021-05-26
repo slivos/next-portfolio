@@ -3,14 +3,13 @@ import { StyledPhone } from './Phone.styled';
 
 export interface PhoneProps {
     label: string,
-    role: string,
+    symbol: string
    };
    
    
    
-export const Phone: React.FC<PhoneProps> = (
-    { label, role, ...props }
-   ) => (
+export function Phone(props: PhoneProps): React.ReactElement { 
+    return (
     <StyledPhone
         role="img"
         aria-label={props.label ? props.label : ""}
@@ -18,4 +17,5 @@ export const Phone: React.FC<PhoneProps> = (
     >
         {props.symbol}
     </StyledPhone>
-);
+    )
+};

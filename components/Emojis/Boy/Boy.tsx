@@ -3,14 +3,13 @@ import { StyledBoy } from './Boy.styled';
 
 export interface BoyProps {
     label: string,
-    role: string,
+    symbol: string
    };
    
    
    
-export const Boy: React.FC<BoyProps> = (
-    { label, role, ...props }
-   ) => (
+export function Boy(props: BoyProps): React.ReactElement { 
+    return (
     <StyledBoy
         role="img"
         aria-label={props.label ? props.label : ""}
@@ -18,4 +17,5 @@ export const Boy: React.FC<BoyProps> = (
     >
         {props.symbol}
     </StyledBoy>
-);
+    )
+};

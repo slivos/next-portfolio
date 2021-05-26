@@ -5,13 +5,10 @@ import { StyledHeader, Ul, Li, StyledAnchor, Logo } from './Header.styled';
 
 
 
-export interface HeaderProps {
- className: string,
-};
 
 
 
-export const Header: React.FC<HeaderProps> = ({
+export const Header: React.FC = ({
     ...props
 }) => {
     return (

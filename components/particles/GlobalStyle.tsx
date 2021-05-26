@@ -11,6 +11,6 @@ html, body {
 
 * {
   box-sizing: border-box;
-  outline: 3px solid black;
+  /* outline: 3px solid black; */
 }
 `
