@@ -10,7 +10,7 @@ export const CardContainer = styled.div`
     align-items: center;
 
 @media (max-width: ${({ theme }) => theme.mobileS}) {
-    height: 200vh;
+    height: 300vh;
 }
 `
 
@@ -24,7 +24,7 @@ export const CardWrapper = styled.div`
     align-items: center;
 
 @media (max-width: ${({ theme }) => theme.mobileS}) {
-    height: 200vh;
+    height: 300vh;
 }
 `
 
