@@ -1,7 +1,4 @@
 import React from 'react';
-import { Boy } from '../../Emojis/Boy/Boy';
-import { Phone } from '../../Emojis/Phone/Phone';
-import { Technologies } from '../../Emojis/Technologies/Technologies';
 import { SvgNext } from '../../TechnologyList/NextT/NextT.styled';
 import { SvgReact } from '../../TechnologyList/ReactT/ReactT.styled';
 import { SvgStory } from '../../TechnologyList/StorybookT/StorybookT.styled';
@@ -41,16 +38,15 @@ import { CardContainer,
 
    
  export const CardItem: React.FC = ({   
-    
    }) => {
+
        return (
            <>   
                 <CardContainer>
                     <CardWrapper>
                         <CardAboutMe id="o-mne">
-                            <Boy symbol="👦🏽" label="boy" />
                             <H1Card>
-                                O mne   
+                            &#128102; O mne   
                             </H1Card>
                             <Paragraph>
                             Som Junior Front End Developer,
@@ -84,9 +80,8 @@ import { CardContainer,
                             </Paragraph>
                         </CardAboutMe>
                         <CardContact id="kontakt">
-                            <Phone symbol="📱" label="phone" />
                             <H1Card>
-                                Kontakt   
+                            &#128241; Kontakt   
                             </H1Card>
                             <ParagraphExtended>
                                 +421 905 495 677
@@ -96,9 +91,8 @@ import { CardContainer,
                             </ParagraphExtended>
                         </CardContact>
                         <StyledCard id="technologie">
-                            <Technologies symbol="🔧" label="technologies" />
                             <H1Card>
-                                Technológie  
+                            &#128295; Technológie  
                             </H1Card>
                         <TechContainer>
                             <TechWrapper>
