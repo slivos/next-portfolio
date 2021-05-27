@@ -44,8 +44,8 @@ export const StyledCard = styled.div`
 }
 
 @media (max-width: ${({ theme }) => theme.mobileS}) {
-    height: 56.73vh;
-    width: 38.37vh; 
+    height: 35em;
+    width: 20em; 
 }
 `
 
