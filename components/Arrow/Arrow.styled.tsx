@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const StyledArrow = styled.div`
-    
     position: absolute;
     top: 85%;
     left: 50%;
     transform: translate(-50%,-50%);
 
+@media (max-width: ${({ theme }) => theme.mobileS}) {
+    top: 87%;
+    }
 
 
     span {
@@ -30,6 +32,11 @@ export const StyledArrow = styled.div`
     @media (max-width: ${({ theme }) => theme.mobileS}) {
         width: 20px;
         height: 20px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.mobile5XS}) {
+        width: 15px;
+        height: 15px;
     }
     }
 

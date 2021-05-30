@@ -28,7 +28,7 @@ export const Header: React.FC = ({
                         </Link>
                         <Link to="kontakt" spy={true} smooth={true} duration={1000}>
                             <Li>
-                            <StyledAnchor>KONTAKT</StyledAnchor>
+                                <StyledAnchor>KONTAKT</StyledAnchor>
                             </Li>
                         </Link>
                     </Ul>

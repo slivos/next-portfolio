@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledMenu, MenuContainer } from './Menu.styled';
+import { StyledMenu, MenuContainer, MenuLink } from './Menu.styled';
 
 export interface MenuProps {
     open: boolean
@@ -9,19 +9,19 @@ export interface MenuProps {
 
 export function Menu (props: MenuProps): React.ReactElement {
 
-    return(
+    return (
       
       <MenuContainer open={props.open}>
         <StyledMenu open={props.open}>
-            <a href="/">
+            <MenuLink to="domov" spy={true} smooth={true} duration={1000}>
                 DOMOV
-            </a>
-            <a href="/">
+            </MenuLink>
+            <MenuLink to="o-mne" spy={true} smooth={true} duration={1000}>
                 O MNE
-            </a>
-            <a href="/">
+            </MenuLink>
+            <MenuLink to="kontakt" spy={true} smooth={true} duration={1000}>
                 KONTAKT
-            </a> 
+            </MenuLink> 
         </StyledMenu>
       </MenuContainer>
     )
