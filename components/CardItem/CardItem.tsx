@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from 'react-reveal/Slide'
+import Slide from 'react-reveal'
 
 import { SvgNext } from '../TechnologyList/NextT/NextT.styled';
 import { SvgReact } from '../TechnologyList/ReactT/ReactT.styled';
