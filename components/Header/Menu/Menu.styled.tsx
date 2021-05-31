@@ -7,7 +7,7 @@ export const StyledMenu = styled.nav<MenuProps>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.primaryDark};
+  background: rgba(13, 12, 29, 0.55);
   height: 100vh;
   padding: 2rem;
   position: absolute;
@@ -20,6 +20,10 @@ export const StyledMenu = styled.nav<MenuProps>`
   @media (max-width: ${({ theme }) => theme.mobileXS}) {
     width: 100%;
   }
+
+  @media (max-width: 960px) {
+    
+}
 `
 
 export const MenuLink = styled(Link)`
@@ -28,7 +32,7 @@ export const MenuLink = styled(Link)`
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.primaryLight};
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s linear;
     cursor: pointer;

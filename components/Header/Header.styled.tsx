@@ -61,4 +61,7 @@ export const Logo = styled.span`
     font-weight: 700;
     cursor: pointer;
 
+@media (max-width: ${({ theme }) => theme.mobileL}) {
+    font-size: 1.5rem;
+}    
 `

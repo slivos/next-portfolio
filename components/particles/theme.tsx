@@ -2,7 +2,7 @@ export const theme = {
     primaryDark: '#0D0C1D',
     primaryLight: '#999999',
     primaryBurger: '#131D4D',
-    primaryHover: '#2c7191',
+    primaryHover: '#3587ad',
     mobile5XS: '320px',
     mobile4XS: '444px',
     mobile3XS: '505px',

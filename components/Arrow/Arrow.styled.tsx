@@ -8,7 +8,11 @@ export const StyledArrow = styled.div`
 
 @media (max-width: ${({ theme }) => theme.mobileS}) {
     top: 87%;
-    }
+}
+
+@media (orientation: landscape) {
+    display: none;
+}
 
 
     span {

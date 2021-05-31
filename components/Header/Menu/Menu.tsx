@@ -3,11 +3,12 @@ import { StyledMenu, MenuContainer, MenuLink } from './Menu.styled';
 
 export interface MenuProps {
     open: boolean
+
    };
 
 
-
 export function Menu (props: MenuProps): React.ReactElement {
+
 
     return (
       

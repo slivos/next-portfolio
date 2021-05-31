@@ -7,7 +7,7 @@ export const MainSecContainer = styled.div`
     rgba(19,29,77,0.6),
     rgba(19,29,77,0.6)
     ),
-    url("images/img1.jpg") center center/cover
+    url("/images/img1.jpg") center center/cover
     no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -16,10 +16,8 @@ export const MainSecContainer = styled.div`
     align-items: center;
 
 @media (max-width: ${({ theme }) => theme.mobileM}) {
-    background-attachment: unset;
-    
+    background-attachment: unset; 
 }
-
 `
 
 export const SectionWelcome = styled.div`
@@ -37,12 +35,26 @@ export const StyledH1 = styled.h1`
     color: #66FCF1;
     margin-top: -100px;
 
+@media (max-width: ${({ theme }) => theme.mobileL}) and (orientation: landscape) {
+    font-size: 6rem;
+    margin-top: 0px;
+}
+
 @media (max-width: ${({ theme }) => theme.mobileM}) {
     font-size: 8rem;
 }
 
+@media (max-width: ${({ theme }) => theme.mobileM}) and (orientation: landscape) {
+    font-size: 6rem;
+    margin-top: 0px;
+}
+
 @media (max-width: ${({ theme }) => theme.mobileXS}) {
     font-size: 6rem;
+}
+
+@media (max-width: ${({ theme }) => theme.mobileXS}) and (orientation: landscape) {
+    font-size: 5rem;
 }
 
 @media (max-width: ${({ theme }) => theme.mobileXXS}) {
@@ -58,12 +70,27 @@ export const StyledP = styled.p`
     margin: 0;
     color: #C5C6C7;
 
+@media (max-width: ${({ theme }) => theme.mobileL}) and (orientation: landscape) {
+    font-size: 1.2rem;
+    margin-top: -20px;
+}
+
 @media (max-width: ${({ theme }) => theme.mobileM}) {
     font-size: 1.3rem;
 }
 
+@media (max-width: ${({ theme }) => theme.mobileM}) and (orientation: landscape) {
+    font-size: 1.2rem;
+    margin-top: -20px;
+}
+
 @media (max-width: ${({ theme }) => theme.mobileXS}) {
     font-size: 1.15rem;
+}
+
+@media (max-width: ${({ theme }) => theme.mobileXS}) and (orientation: landscape) {
+    font-size: 1rem;
+    margin-top: -20px;
 }
 
 @media (max-width: ${({ theme }) => theme.mobileXXS}) {
@@ -90,4 +117,12 @@ export const SocialLink = styled.a`
     &:hover {
         color: #66FCF1;
     }
+
+@media (max-width: ${({ theme }) => theme.mobileL}) and (orientation: landscape) {
+    top: 10px;
+}
+
+@media (max-width: ${({ theme }) => theme.mobileM}) and (orientation: landscape) {
+    top: 10px;
+}
 `
