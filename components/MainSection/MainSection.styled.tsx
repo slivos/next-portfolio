@@ -7,7 +7,7 @@ export const MainSecContainer = styled.div`
     rgba(19,29,77,0.6),
     rgba(19,29,77,0.6)
     ),
-    url("images/img1.jpg") center center/cover
+    url("/images/img1.jpg") center center/cover
     no-repeat;
     background-attachment: fixed;
     display: flex;

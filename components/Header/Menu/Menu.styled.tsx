@@ -21,8 +21,8 @@ export const StyledMenu = styled.nav<MenuProps>`
     width: 100%;
   }
 
-  @media (max-width: 960px) {
-    
+@media (max-width: ${({ theme }) => theme.mobileXS}) and (orientation: landscape) {
+    padding-top: 5rem;
 }
 `
 
@@ -37,6 +37,18 @@ export const MenuLink = styled(Link)`
     transition: color 0.3s linear;
     cursor: pointer;
     
+@media (max-width: ${({ theme }) => theme.mobileL}) and (orientation: landscape) {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.3rem 0;
+}
+
+@media (max-width: ${({ theme }) => theme.mobileXS}) and (orientation: landscape) {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
 @media (max-width: ${({ theme }) => theme.mobileXS}) {
     font-size: 1.5rem;
     text-align: center;

@@ -37,7 +37,7 @@ export interface MainSectionProps {
 
                    <SocialContainer>
                        <SocialWrapper>
-                           <SocialLink href="http://github.com/" target="_blank" rel="noopener noreferrer">
+                           <SocialLink href="http://github.com/slivos/next-portfolio" target="_blank" rel="noopener noreferrer">
                                <FiGithub />
                            </SocialLink>
                        </SocialWrapper>

@@ -41,7 +41,7 @@ export const Footer: React.FC = ({
                            <div>slivos.frontend@gmail.com</div>
                         </li>
                         <li>
-                        <SocialLinkGit href="http://github.com/" target="_blank" rel="noopener noreferrer">
+                        <SocialLinkGit href="http://github.com/slivos/next-portfolio" target="_blank" rel="noopener noreferrer">
                             <FiGithub />
                         </SocialLinkGit>
                         </li>
