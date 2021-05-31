@@ -42,7 +42,7 @@ export const StyledCard = styled.div`
 
 @media (max-width: ${({ theme }) => theme.mobileS}) {
     height: 35em;
-    width: 20em; 
+    width: 18em; 
 }
 
 
@@ -52,12 +52,12 @@ export const CardAboutMe = styled(StyledCard)`
 
 @media (max-width: ${({ theme }) => theme.mobileS}) {
     height: 30em;
-    width: 20em;
+    width: 18em;
 }
 
 @media (max-width: ${({ theme }) => theme.mobile5XS}) {
     height: 36em;
-    width: 20em; 
+    width: 18em; 
 }
 `
 
@@ -65,12 +65,12 @@ export const CardContact = styled(StyledCard)`
 
 @media (max-width: ${({ theme }) => theme.mobileS}) {
     height: 25em;
-    width: 20em;
+    width: 18em;
 }
 
 @media (max-width: ${({ theme }) => theme.mobile5XS}) {
     height: 22em;
-    width: 20em; 
+    width: 18em; 
 }
 `
 

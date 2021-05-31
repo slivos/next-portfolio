@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from 'react-reveal'
+import { Slide } from 'react-awesome-reveal';
 
 import { SvgNext } from '../TechnologyList/NextT/NextT.styled';
 import { SvgReact } from '../TechnologyList/ReactT/ReactT.styled';
@@ -46,7 +46,7 @@ import { CardContainer,
            <>   
                 <CardContainer>
                     <CardWrapper>
-                        <Slide bottom>
+                        <Slide direction="up" triggerOnce={true}>
                         <CardAboutMe id="o-mne">
                             <H1Card>
                             &#128102; O mne   
@@ -83,7 +83,7 @@ import { CardContainer,
                             </Paragraph>
                         </CardAboutMe>
                         </Slide>
-                        <Slide bottom>
+                        <Slide direction="up" triggerOnce={true}>
                         <CardContact id="kontakt">
                             <H1Card>
                             &#128241; Kontakt   
@@ -96,7 +96,7 @@ import { CardContainer,
                             </ParagraphExtended>
                         </CardContact>
                         </Slide>
-                        <Slide bottom>
+                        <Slide direction="up" triggerOnce={true}>
                         <StyledCard id="technologie">
                             <H1Card>
                             &#128295; Technológie  
