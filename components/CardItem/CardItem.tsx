@@ -11,100 +11,71 @@ import { SvgType } from '../TechnologyList/TypescriptT/TypescriptT.styled';
 // import { StyledComponentsT } from '../../TechnologyList/StyledComponentsT/StyledComponentsT';
 // import { StyledSystemT } from '../../TechnologyList/StyledSystemT/StyledSystemT';
 // import { TypescriptT } from '../../TechnologyList/TypescriptT/TypescriptT';
-import { CardContainer, 
-         CardWrapper,
-         StyledCard,
-         H1Card,
-         Paragraph,
-         Sport,
-         Workout,
-         Mtb,
-         Books,
-         Pools,
-         ActivityWrapper,
-         TechWrapper,
-         TechContainer,
-         ParagraphExtended,
-         TechWrapper2,
-         CardAboutMe,
-         CardContact
-    
-
-
+import {
+    CardContainer,
+    CardWrapper,
+    StyledCard,
+    H1Card,
+    Paragraph,
+    Sport,
+    Workout,
+    Mtb,
+    Books,
+    Pools,
+    ActivityWrapper,
+    TechWrapper,
+    TechContainer,
+    ParagraphExtended,
+    TechWrapper2,
+    CardAboutMe,
+    CardContact,
 } from './CardItem.styled';
 
-
-
-
-   
- export const CardItem: React.FC = ({   
-   }) => {
-
-       return (
-           <>   
-                <CardContainer>
-                    <CardWrapper>
-                        <CardAboutMe id="o-mne">
-                            <H1Card>
-                            &#128102; O mne   
-                            </H1Card>
-                            <Paragraph>
-                            Som Junior Front End Developer,
-                            ktorý má v sebe veľkú túžbu tvoriť.
-                            Vytvárať diela, o ktorých vie,
-                            že druhým spravia radosť.
-                            Snažím sa deň po dni na sebe pracovať
-                            a prísť na každý problém.
-                            Ak ma zrovna nenájdete kódiť, 
-                            tak ma určite nájdete jazdiť v prírode 
-                            na bicykli alebo cvičiť.
-                            <br/>
-                            <br/>
+export const CardItem: React.FC = ({}) => {
+    return (
+        <>
+            <CardContainer>
+                <CardWrapper>
+                    <CardAboutMe id="o-mne">
+                        <H1Card>O mne</H1Card>
+                        <Paragraph>
+                            Som Junior Front End Developer, ktorý má v sebe veľkú túžbu tvoriť. Vytvárať diela, o
+                            ktorých vie, že druhým spravia radosť. Snažím sa deň po dni na sebe pracovať a prísť na
+                            každý problém. Ak ma zrovna nenájdete kódiť, tak ma určite nájdete jazdiť v prírode na
+                            bicykli alebo cvičiť.
+                            <br />
+                            <br />
                             <ActivityWrapper>
-                                <Sport>
-                                    #&nbsp; šport
-                                </Sport>
-                                <Workout>
-                                    #&nbsp; workout
-                                </Workout>
-                                <Mtb>
-                                    #&nbsp; mtb
-                                </Mtb>
-                                <Books>
-                                    #&nbsp; knihy
-                                </Books>
-                                <Pools>
-                                    #&nbsp; bazény
-                                </Pools>
+                                <Sport>#&nbsp; šport</Sport>
+                                <Workout>#&nbsp; workout</Workout>
+                                <Mtb>#&nbsp; mtb</Mtb>
+                                <Books>#&nbsp; knihy</Books>
+                                <Pools>#&nbsp; bazény</Pools>
                             </ActivityWrapper>
-                            </Paragraph>
-                        </CardAboutMe>
-                        <CardContact id="kontakt">
-                            <H1Card>
-                            &#128241; Kontakt   
-                            </H1Card>
-                            <ParagraphExtended>
-                                +421 905 495 677
-                                <br/>
-                                <br/>
-                                slivos.frontend@gmail.com
-                            </ParagraphExtended>
-                        </CardContact>
-                        <StyledCard id="technologie">
-                            <H1Card>
-                            &#128295; Technológie  
-                            </H1Card>
+                        </Paragraph>
+                    </CardAboutMe>
+                    <CardContact id="kontakt">
+                        <H1Card>Kontakt</H1Card>
+                        <ParagraphExtended>
+                            +421 905 495 677
+                            <br />
+                            <br />
+                            slivos.frontend@gmail.com
+                        </ParagraphExtended>
+                    </CardContact>
+                    <StyledCard id="technologie">
+                        <H1Card>Technológie</H1Card>
                         <TechContainer>
                             <TechWrapper>
-                                <SvgNext />
-                                <div>Next-JS - junior</div>
                                 <SvgReact />
                                 <div>React-JS - junior</div>
+                                <SvgNext />
+                                <div>Next-JS - junior</div>
                                 <SvgStory />
                                 <div>Storybook - junior</div>
                             </TechWrapper>
-                            <TechWrapper2>    
-                                <SvgType/>
+                            <TechWrapper2>
+                                <SvgType />
                                 <div>Typescript - junior</div>
                                 <SvgStyledSys />
                                 <div>Styled-system - junior</div>
@@ -112,9 +83,9 @@ import { CardContainer,
                                 <div>Styled-components - intermediate</div>
                             </TechWrapper2>
                         </TechContainer>
-                        </StyledCard>
-                    </CardWrapper>
-                </CardContainer>
-           </>
-       );
-   };
+                    </StyledCard>
+                </CardWrapper>
+            </CardContainer>
+        </>
+    );
+};

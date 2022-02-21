@@ -11,5 +11,5 @@ export const theme = {
     mobileS: '620px',
     mobileM: '768px',
     mobileL: '960px',
-    laptop: '1395px'
-}
+    laptop: '1395px',
+};
