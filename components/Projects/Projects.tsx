@@ -5,7 +5,7 @@ import projects from '../../data/projects.json';
 
 const Projects = () => {
     return (
-        <MainContainer>
+        <MainContainer id="projekty">
             <H1>Projekty</H1>
             <ProjectsContainer>
                 <ProjectsWrapper>
