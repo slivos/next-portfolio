@@ -1,29 +1,32 @@
 import React from 'react';
-import { StyledMenu, MenuContainer, MenuLink } from './Menu.styled';
+import { MenuContainer, MenuItem, MenuUl } from './Menu.styled';
+import { Link } from 'react-scroll';
 
 export interface MenuProps {
-    open: boolean
+    open?: boolean;
+    show?: boolean;
+    closed?: () => void;
+}
 
-   };
-
-
-export function Menu (props: MenuProps): React.ReactElement {
-
-
+const Menu = (props: MenuProps) => {
     return (
-      
-      <MenuContainer open={props.open}>
-        <StyledMenu open={props.open}>
-            <MenuLink to="domov" spy={true} smooth={true} duration={1000}>
-                DOMOV
-            </MenuLink>
-            <MenuLink to="o-mne" spy={true} smooth={true} duration={1000}>
-                O MNE
-            </MenuLink>
-            <MenuLink to="kontakt" spy={true} smooth={true} duration={1000}>
-                KONTAKT
-            </MenuLink> 
-        </StyledMenu>
-      </MenuContainer>
-    )
+        <MenuContainer open={props.open}>
+            <MenuUl>
+                <Link onClick={props.closed} to="domov" spy={true} smooth={true} duration={1000}>
+                    <MenuItem>DOMOV</MenuItem>
+                </Link>
+                <Link onClick={props.closed} to="o-mne" spy={true} smooth={true} duration={1000}>
+                    <MenuItem>O MNE</MenuItem>
+                </Link>
+                <Link onClick={props.closed} to="kontakt" spy={true} smooth={true} duration={1000}>
+                    <MenuItem>KONTAKT</MenuItem>
+                </Link>
+                <Link onClick={props.closed} to="projekty" spy={true} smooth={true} duration={1000}>
+                    <MenuItem>PROJEKTY</MenuItem>
+                </Link>
+            </MenuUl>
+        </MenuContainer>
+    );
 };
+
+export default Menu;
