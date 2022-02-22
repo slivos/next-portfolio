@@ -1,7 +1,5 @@
 import React from 'react';
 import { Header } from '../components/Header/Header';
-import { Burger } from '../components/Header/Burger/Burger';
-
 import ProgressBar from 'react-progressbar-on-scroll';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../components/particles/GlobalStyle';
@@ -18,7 +16,6 @@ export default function Home() {
                 <GlobalStyle />
                 <ProgressBar color="#004C99" />
                 <Header />
-                <Burger />
                 <MainSection />
                 <CardItem />
                 <Projects />
