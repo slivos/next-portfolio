@@ -15,6 +15,7 @@
     "dependencies": {
         "@types/node": "^15.3.0",
         "@types/react": "^17.0.5",
+        "hamburger-react": "^2.4.1",
         "next": "^10.2.0",
         "normalize.css": "^8.0.1",
         "polished": "^4.1.2",
