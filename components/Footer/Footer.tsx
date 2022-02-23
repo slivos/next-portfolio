@@ -24,6 +24,11 @@ export const Footer: React.FC = ({}) => {
                                 KONTAKT
                             </FooterLink>
                         </li>
+                        <li>
+                            <FooterLink to="projekty" spy={true} smooth={true} duration={1000}>
+                                PROJEKTY
+                            </FooterLink>
+                        </li>
                     </FooterUl>
                 </FooterWrapper>
                 <small>&copy; Designed by slivos, 2022</small>
