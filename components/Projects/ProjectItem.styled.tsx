@@ -9,14 +9,14 @@ export const TextWrapper = styled.div`
 export const Text = styled.span`
     font-size: 1.2rem;
     font-weight: 700;
-    color: white;
+    color: #323a42;
 `;
 
 export const Item = styled.div`
     width: 20em;
     height: 10em;
     margin: 10px 10px;
-    background: blueviolet;
+    background: #66fcf1;
     display: flex;
     justify-content: center;
     transition: box-shadow 0.2s ease-in;
