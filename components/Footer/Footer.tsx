@@ -1,9 +1,16 @@
 import React from 'react';
-import { FooterContainer, FooterWrapper, FooterUl, FooterLink, SocialLinkGit } from './Footer.styled';
-
+import {
+    FooterContainer,
+    FooterWrapper,
+    FooterUl,
+    FooterLink,
+    FooterSocialLink,
+    FooterSocialWrapper,
+} from './Footer.styled';
 import { FiGithub } from 'react-icons/fi';
+import { FiLinkedin } from 'react-icons/fi';
 
-export const Footer: React.FC = ({}) => {
+export const Footer: React.FC = () => {
     return (
         <>
             <FooterContainer>
@@ -31,7 +38,13 @@ export const Footer: React.FC = ({}) => {
                         </li>
                     </FooterUl>
                 </FooterWrapper>
-                <small>&copy; Designed by slivos, 2022</small>
+                <small>
+                    &copy; Created / designed by{' '}
+                    <a href="https://github.com/slivos" target="_blank" rel="noopener noreferrer">
+                        slivos
+                    </a>
+                    , 2022
+                </small>
                 <FooterWrapper>
                     <FooterUl>
                         <li>
@@ -40,15 +53,22 @@ export const Footer: React.FC = ({}) => {
                         <li>
                             <div>slivos.frontend@gmail.com</div>
                         </li>
-                        <li>
-                            <SocialLinkGit
+                        <FooterSocialWrapper>
+                            <FooterSocialLink
                                 href="http://github.com/slivos/next-portfolio"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <FiGithub />
-                            </SocialLinkGit>
-                        </li>
+                            </FooterSocialLink>
+                            <FooterSocialLink
+                                href="http://www.linkedin.com/in/samuel-slivos"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FiLinkedin />
+                            </FooterSocialLink>
+                        </FooterSocialWrapper>
                     </FooterUl>
                 </FooterWrapper>
             </FooterContainer>
