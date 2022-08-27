@@ -3,10 +3,10 @@ import { Link } from 'react-scroll';
 import { StyledHeader, Ul, Li, StyledAnchor, Logo } from './Header.styled';
 import TurnMenu from '../TurnMenu/Turn';
 
-export const Header: React.FC = ({ ...props }) => {
+export const Header: React.FC = () => {
     return (
         <>
-            <StyledHeader {...props}>
+            <StyledHeader>
                 <TurnMenu />
                 <Ul>
                     <Link to="domov" spy={true} smooth={true} duration={1000}>
