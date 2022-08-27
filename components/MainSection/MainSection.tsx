@@ -1,26 +1,13 @@
 import React from 'react';
-import {
-    MainSecContainer,
-    SectionWelcome,
-    StyledH1,
-    StyledP,
-    SocialContainer,
-    SocialWrapper,
-    SocialLink,
-} from './MainSection.styled';
-
+import { MainSecContainer, SectionWelcome, StyledH1, StyledP, SocialLink, SocialWrapper } from './MainSection.styled';
 import { Arrow } from '../Arrow/Arrow';
-
 import { FiGithub } from 'react-icons/fi';
+import { FiLinkedin } from 'react-icons/fi';
 
-export interface MainSectionProps {
-    href?: string;
-}
-
-export const MainSection: React.FC<MainSectionProps> = ({ ...props }) => {
+export const MainSection: React.FC = () => {
     return (
         <MainSecContainer id="domov">
-            <SectionWelcome {...props}>
+            <SectionWelcome>
                 <StyledH1>Vitajte</StyledH1>
                 <StyledP>
                     Volám sa Samuel a mojím zameraním je Front End Development.
@@ -29,18 +16,22 @@ export const MainSection: React.FC<MainSectionProps> = ({ ...props }) => {
                     <br />
                     Baví ma tvoriť zaujímavé a moderné web stránky.
                 </StyledP>
-
-                <SocialContainer>
-                    <SocialWrapper>
-                        <SocialLink
-                            href="http://github.com/slivos/next-portfolio"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FiGithub />
-                        </SocialLink>
-                    </SocialWrapper>
-                </SocialContainer>
+                <SocialWrapper>
+                    <SocialLink
+                        href="http://github.com/slivos/next-portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FiGithub />
+                    </SocialLink>
+                    <SocialLink
+                        href="http://www.linkedin.com/in/samuel-slivos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FiLinkedin />
+                    </SocialLink>
+                </SocialWrapper>
                 <Arrow />
             </SectionWelcome>
         </MainSecContainer>
