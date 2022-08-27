@@ -1,16 +1,9 @@
 import React from 'react';
-import { SvgNext } from '../TechnologyList/NextT/NextT.styled';
-import { SvgReact } from '../TechnologyList/ReactT/ReactT.styled';
-import { SvgStory } from '../TechnologyList/StorybookT/StorybookT.styled';
-import { SvgStyledComp } from '../TechnologyList/StyledComponentsT/StyledComponentsT.styled';
-import { SvgStyledSys } from '../TechnologyList/StyledSystemT/StyledSystemT.styled';
-import { SvgType } from '../TechnologyList/TypescriptT/TypescriptT.styled';
-// import { NextT } from '../../TechnologyList/NextT/NextT';
-// import { ReactT } from '../../TechnologyList/ReactT/ReactT';
-// import { StorybookT } from '../../TechnologyList/StorybookT/StorybookT';
-// import { StyledComponentsT } from '../../TechnologyList/StyledComponentsT/StyledComponentsT';
-// import { StyledSystemT } from '../../TechnologyList/StyledSystemT/StyledSystemT';
-// import { TypescriptT } from '../../TechnologyList/TypescriptT/TypescriptT';
+import { SvgReact } from '../TechnologyList/React/React.styled';
+import { SvgStyledComp } from '../TechnologyList/StyledComponents/StyledComponents.styled';
+import { SvgStyledSys } from '../TechnologyList/StyledSystem/StyledSystem.styled';
+import { SvgType } from '../TechnologyList/Typescript/Typescript.styled';
+
 import {
     CardContainer,
     CardWrapper,
@@ -26,12 +19,12 @@ import {
     TechWrapper,
     TechContainer,
     ParagraphExtended,
-    TechWrapper2,
     CardAboutMe,
     CardContact,
+    ItemWrapper,
 } from './CardItem.styled';
 
-export const CardItem: React.FC = ({}) => {
+export const CardItem: React.FC = () => {
     return (
         <>
             <CardContainer>
@@ -67,21 +60,25 @@ export const CardItem: React.FC = ({}) => {
                         <H1Card>Technológie</H1Card>
                         <TechContainer>
                             <TechWrapper>
-                                <SvgReact />
-                                <div>React-JS - junior</div>
-                                <SvgNext />
-                                <div>Next-JS - junior</div>
-                                <SvgStory />
-                                <div>Storybook - junior</div>
+                                <ItemWrapper>
+                                    <SvgReact />
+                                    <div>React.js</div>
+                                </ItemWrapper>
+                                <ItemWrapper>
+                                    <SvgType />
+                                    <div>Typescript</div>
+                                </ItemWrapper>
                             </TechWrapper>
-                            <TechWrapper2>
-                                <SvgType />
-                                <div>Typescript - junior</div>
-                                <SvgStyledSys />
-                                <div>Styled-system - junior</div>
-                                <SvgStyledComp />
-                                <div>Styled-components - intermediate</div>
-                            </TechWrapper2>
+                            <TechWrapper>
+                                <ItemWrapper>
+                                    <SvgStyledSys />
+                                    <div>Styled-system</div>
+                                </ItemWrapper>
+                                <ItemWrapper>
+                                    <SvgStyledComp />
+                                    <div>Styled-components</div>
+                                </ItemWrapper>
+                            </TechWrapper>
                         </TechContainer>
                     </StyledCard>
                 </CardWrapper>
